@@ -1,0 +1,9 @@
+{
+  "name": "worldpop-population",
+  "description": "GIS skill for worldpop-population",
+  "version": "0.1.0",
+  "author": "ruiduobao",
+  "skills": [
+    "worldpop-population"
+  ]
+}
