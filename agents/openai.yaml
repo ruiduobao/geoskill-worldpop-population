@@ -1,0 +1,4 @@
+description: Search and download WorldPop population grid datasets (GeoTIFF) by country
+  and year
+display_name: Worldpop Population
+name: worldpop-population

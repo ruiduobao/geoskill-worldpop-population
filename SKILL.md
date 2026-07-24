@@ -1,14 +1,11 @@
 ---
-name: worldpop-population
-display_name: WorldPop 人口数据下载
-version: 0.1.0
-author: ruiduobao
-license: MIT-0
-description: |
-  Search and download WorldPop population grid datasets (GeoTIFF) by country and year.
+description: 'Search and download WorldPop population grid datasets (GeoTIFF) by country
+  and year.
+
   Supports population density, births, age structures, and more. No API key required.
-runtime: python>=3.8
-tags: [gis, population, demographics, remote-sensing, cli]
+
+  '
+name: worldpop-population
 ---
 
 # WorldPop Population
@@ -28,16 +25,16 @@ births, age structures, contraceptive use, and more. No API key required.
 
 ```bash
 # Search for China population data
-python scripts/worldpop-population.py search --country China --year 2020
+python scripts\worldpop-population.py search --country China --year 2020
 
 # Search by ISO code
-python scripts/worldpop-population.py search --code CHN --type population
+python scripts\worldpop-population.py search --code CHN --type population
 
 # Download a dataset by ID
-python scripts/worldpop-population.py download --id 25 --output pop_chn_2020.tif
+python scripts\worldpop-population.py download --id 25 --output pop_chn_2020.tif
 
 # List available countries
-python scripts/worldpop-population.py list-countries
+python scripts\worldpop-population.py list-countries
 ```
 
 ## Installation
@@ -234,16 +231,16 @@ raster2pgsql -s 4326 -I -C pop_CHN_2020.tif public.worldpop | psql -d gis_db
 
 ```bash
 # 搜索中国人口数据
-python scripts/worldpop-population.py search --country China --year 2020
+python scripts\worldpop-population.py search --country China --year 2020
 
 # 按 ISO 代码搜索
-python scripts/worldpop-population.py search --code CHN --type population
+python scripts\worldpop-population.py search --code CHN --type population
 
 # 按 ID 下载数据集
-python scripts/worldpop-population.py download --id 25 --output pop_chn_2020.tif
+python scripts\worldpop-population.py download --id 25 --output pop_chn_2020.tif
 
 # 列出可用国家
-python scripts/worldpop-population.py list-countries
+python scripts\worldpop-population.py list-countries
 ```
 
 ### 数据来源
