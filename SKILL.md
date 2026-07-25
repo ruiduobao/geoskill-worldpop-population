@@ -165,7 +165,7 @@ If you use WorldPop data in publications, please cite:
 ```bash
 # Download population for multiple countries
 for iso in CHN IND USA BRA; do
-  python scripts/worldpop_download.py download     --iso $iso --type population --year 2020     --output pop_${iso}_2020.tif
+  python scripts\worldpop-population.py download     --iso $iso --type population --year 2020     --output pop_${iso}_2020.tif
   sleep 2
 done
 ```
@@ -187,7 +187,7 @@ jobs:
           python-version: '3.11'
       - run: pip install requests tqdm
       - run: |
-          python scripts/worldpop_download.py download \
+          python scripts\worldpop-population.py download \
             --iso CHN --type population --year 2020 \
             --output data/china_pop2020.tif
 ```
