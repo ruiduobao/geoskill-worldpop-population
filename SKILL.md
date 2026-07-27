@@ -1,11 +1,6 @@
 ---
-description: 'Search and download WorldPop population grid datasets (GeoTIFF) by country
-  and year.
-
-  Supports population density, births, age structures, and more. No API key required.
-
-  '
 name: worldpop-population
+description: 'Search and download WorldPop population grid datasets (GeoTIFF) by country description: 'Search and download WorldPop population grid datasets (GeoTIFF) by country and year.  Supports population density, births, age structures, and more. No API key required.  '
 ---
 
 # WorldPop Population
